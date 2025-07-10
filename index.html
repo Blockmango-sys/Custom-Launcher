@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Custom Lunar Launcher</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body {
+      background-image: url('assets/background.jpeg'); /* Replace with actual image path */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.65);
+      padding: 60px;
+      border-radius: 20px;
+      text-align: center;
+      max-width: 600px;
+    }
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+    .button-group {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .launch-button {
+      background-color: #00c0ff;
+      color: white;
+      border: none;
+      padding: 14px 28px;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .launch-button:hover {
+      background-color: #00e5ff;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>🌙 Welcome to Lunar Launcher</h1>
+    <p>Choose your destination and launch your adventure!</p>
+    <div class="button-group">
+      <a class="launch-button" href="servers.html">Servers</a>
+      <a class="launch-button" href="settings.html">Settings</a>
+      <a class="launch-button" href="launch.html">Launch Game</a>
+    </div>
+  </div>
+</body>
+</html>
